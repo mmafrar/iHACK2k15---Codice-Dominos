@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>CheckLoged</servlet-name>
+        <servlet-class>com.codicedominos.tow.controller.action.CheckLoged</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserRegistration</servlet-name>
+        <servlet-class>com.codicedominos.tow.controller.action.UserRegistration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserSignIn</servlet-name>
+        <servlet-class>com.codicedominos.tow.controller.action.UserSignIn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserSignOut</servlet-name>
+        <servlet-class>com.codicedominos.tow.controller.action.UserSignOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckLoged</servlet-name>
+        <url-pattern>/CheckLoged</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserRegistration</servlet-name>
+        <url-pattern>/UserRegistration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserSignIn</servlet-name>
+        <url-pattern>/UserSignIn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserSignOut</servlet-name>
+        <url-pattern>/UserSignOut</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
