@@ -252,7 +252,11 @@ Intro
     color: #030d18;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+<<<<<<< HEAD
 
+=======
+///////////////////////////////////////////////////////////////////////////////////////////
+>>>>>>> b592174b925c384ece0f31f55557df5f7d33b354
 @media (max-width: 320px) {
     #cd-intro{
         background: url(../img/dietmobi.png) no-repeat center center;  
